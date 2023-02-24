@@ -14,3 +14,15 @@
     }
     return number;
 }
+
+string[] FillRandomArray(int size) // Заполнение пользователем одномерного массива заданного размера.
+{
+    string[] array = new string[size];
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write($"Введите {i + 1} эллемент массива: ");
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
+

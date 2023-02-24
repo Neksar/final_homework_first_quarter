@@ -38,3 +38,15 @@ string[] NewStringArray(string[] array, int left, int right) // Заполнен
     return new_array;
 }
 
+void PrintArray(string[] array)
+{
+    Console.WriteLine("[" + string.Join(", ", array) + "]");
+}
+System.Console.WriteLine();
+
+int sizeArray = InputNumber("Введите необходимую длину массива: ");
+string[] strArray = FillRandomArray(sizeArray);
+PrintArray(strArray);
+
+string[] newStrArray = NewStringArray(strArray, 0, 4);
+PrintArray(newStrArray);
